@@ -11,13 +11,13 @@ been updated for Spotify's February 2026 endpoint changes
  
 Setup:
   pip install spotipy requests
-  export SPOTIPY_CLIENT_ID="46564aea502a40e6a230e96b0c1146e8"          # from the developer dashboard
-  export SPOTIPY_CLIENT_SECRET="991609d490104a1584a6d80be3c5e84b"
+  export SPOTIPY_CLIENT_ID="..."          # from the developer dashboard
+  export SPOTIPY_CLIENT_SECRET="..."
   export SPOTIPY_REDIRECT_URI="http://127.0.0.1:8888/callback"   # must match the dashboard exactly
   python scripts/spotify_smoke_test.py            # read/write checks
   python scripts/spotify_smoke_test.py --skip     # also tests 'skip to next' (needs a playing device)
  
-Windows PowerShell: use  $env:SPOTIPY_CLIENT_ID="46564aea502a40e6a230e96b0c1146e8"  instead of export.
+Windows PowerShell: use  $env:SPOTIPY_CLIENT_ID="..."  instead of export.
 First run opens a browser to log in; the token is cached in .spotify_token_cache
 (keep it out of Git).
 """
@@ -42,8 +42,8 @@ SCOPES = " ".join([
  
 def get_token():
     auth = SpotifyOAuth(
-        client_id=os.environ["SPOTIPY_CLIENT_ID"],
-        client_secret=os.environ["SPOTIPY_CLIENT_SECRET"],
+        client_id="46564aea502a40e6a230e96b0c1146e8",
+        client_secret="991609d490104a1584a6d80be3c5e84b",
         redirect_uri=os.environ.get("SPOTIPY_REDIRECT_URI", "http://127.0.0.1:8888/callback"),
         scope=SCOPES,
         cache_path=".spotify_token_cache",

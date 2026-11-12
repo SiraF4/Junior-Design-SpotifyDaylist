@@ -1,8 +1,13 @@
 # personal data and secrets - never commit these
-data/raw/
+data/raw/*
+data/processed/*
+data/synthetic/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/synthetic/.gitkeep
 .env
 .spotify_token_cache
 .cache
+.venv/
 __pycache__/
 *.pyc
- 
