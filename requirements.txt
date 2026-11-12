@@ -1,0 +1,10 @@
+# laptop / backend environment:  pip install -r requirements.txt
+pandas
+numpy
+scikit-learn
+matplotlib
+requests
+spotipy
+rapidfuzz        # fuzzy matching stage (optional but recommended)
+flask            # backend the Pi talks to (week 2-3)
+pytest           # tests
