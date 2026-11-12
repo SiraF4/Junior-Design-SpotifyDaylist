@@ -1,0 +1,8 @@
+# personal data and secrets - never commit these
+data/raw/
+.env
+.spotify_token_cache
+.cache
+__pycache__/
+*.pyc
+ 

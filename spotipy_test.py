@@ -1,6 +1,6 @@
-import spotipy
+import spotipy_test
 from spotipy.oauth2 import SpotifyOAuth
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
+sp = spotipy_test.Spotify(auth_manager=SpotifyOAuth(
     client_id="YOUR_ID", client_secret="YOUR_SECRET",
     redirect_uri="http://127.0.0.1:8888/callback",
     scope="user-read-recently-played playlist-modify-private"))
