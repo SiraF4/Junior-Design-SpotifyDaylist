@@ -42,8 +42,8 @@ SCOPES = " ".join([
  
 def get_token():
     auth = SpotifyOAuth(
-        client_id="46564aea502a40e6a230e96b0c1146e8",
-        client_secret="991609d490104a1584a6d80be3c5e84b",
+        client_id="",
+        client_secret="",
         redirect_uri=os.environ.get("SPOTIPY_REDIRECT_URI", "http://127.0.0.1:8888/callback"),
         scope=SCOPES,
         cache_path=".spotify_token_cache",
