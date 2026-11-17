@@ -9,5 +9,6 @@ data/synthetic/*
 .spotify_token_cache
 .cache
 .venv/
+scripts/spotify_smoke_test.py
 __pycache__/
 *.pyc
